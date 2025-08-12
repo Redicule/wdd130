@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Devon Hibbert" />
+  <title>Home | White Water Adventures</title>
+  <meta name="description" content="Experience unforgettable white water rafting in South Africa. Book guided trips, explore our rivers, and join our newsletter for seasonal offers and updates." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Company Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="position: relative;">
+      <img src="images/image1.webp" alt="Raft slicing through whitewater on a sunny day" width="1600" height="700" style="width:100%;height:auto;display:block;" />
+      <div class="hero-text" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.55);padding:1.25rem 1.5rem;border-radius:12px;max-width:90%;text-align:center;color:#fff;">
+        <h1 style="margin:0 0 .5rem 0;line-height:1.2;">Find Your River</h1>
+        <p style="margin:.25rem 0 1rem 0;">From first-time floats to expert rapids—your next adventure starts here.</p>
+        <a href="trips.html" class="btn cta" style="display:inline-block;padding:.75rem 1.25rem;background:#004E89;color:#fff;text-decoration:none;border-radius:10px;font-weight:600;">See Trips</a>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SIGNUP -->
+    <section class="newsletter" aria-labelledby="newsletter-heading" style="padding:2rem 1rem;max-width:1100px;margin:0 auto;">
+      <h2 id="newsletter-heading" style="margin-top:0;">Join Our Newsletter</h2>
+      <p>Get river conditions, seasonal discounts, and trip openings straight to your inbox.</p>
+      <form class="newsletter-form" method="post" action="#">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name" style="width:100%;padding:.65rem;border:2px solid #004E89;border-radius:8px;" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" style="width:100%;padding:.65rem;border:2px solid #004E89;border-radius:8px;" />
+        </div>
+        <div>
+          <button type="submit" class="btn" style="padding:.8rem 1.2rem;background:#004E89;color:#fff;border:none;border-radius:10px;cursor:pointer;font-weight:700;">Subscribe</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- CALL TO ACTION STRIP -->
+    <section class="cta-strip" aria-label="Plan your trip" style="background:#0b2c4a;color:#fff;">
+      <div style="max-width:1100px;margin:0 auto;padding:1.25rem 1rem;display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;">
+        <p style="margin:0;">Ready to get on the river? Explore dates, routes, and difficulty levels.</p>
+        <a href="trips.html" class="btn" style="display:inline-block;padding:.6rem 1rem;background:#F7C59F;color:#0b2c4a;text-decoration:none;border-radius:10px;font-weight:700;">Plan a Trip</a>
+      </div>
+    </section>
+
+    <!-- HOME GRID CONTENT -->
+    <section class="home-grid" aria-labelledby="explore-heading" style="max-width:1100px;margin:2rem auto; padding:0 1rem;">
+      <h2 id="explore-heading" style="margin-top:0;">Explore With Us</h2>
+      <div class="grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+        <!-- Card 1 -->
+        <a href="trips.html" class="card-link" aria-label="View trips"><article class="card" style="background:#fff;border-radius:14px;overflow:hidden;border:1px solid #d8d8d8;">
+          <img src="images/image2.webp" alt="Gentle river section suitable for families" width="800" height="600" style="width:100%;height:auto;display:block;" />
+          <div class="card-body" style="padding:1rem;">
+            <h3 style="margin:.25rem 0;">Family-Friendly Floats</h3>
+            <p>Easy, scenic trips perfect for first-timers and kids. Safety-first guides included.</p>
+          </div>
+        </article></a>
+        <!-- Card 2 -->
+        <a href="trips.html" class="card-link" aria-label="View trips"><article class="card" style="background:#fff;border-radius:14px;overflow:hidden;border:1px solid #d8d8d8;">
+          <img src="images/image3.webp" alt="Raft powering through whitewater rapids" width="800" height="600" style="width:100%;height:auto;display:block;" />
+          <div class="card-body" style="padding:1rem;">
+            <h3 style="margin:.25rem 0;">Class IV–V Rapids</h3>
+            <p>High-adrenaline runs for experienced paddlers who want the biggest water.</p>
+          </div>
+        </article></a>
+        <!-- Card 3 -->
+        <a href="trips.html" class="card-link" aria-label="View trips"><article class="card" style="background:#fff;border-radius:14px;overflow:hidden;border:1px solid #d8d8d8;">
+          <img src="images/image4.webp" alt="Campsite by the river at sunset" width="800" height="600" style="width:100%;height:auto;display:block;" />
+          <div class="card-body" style="padding:1rem;">
+            <h3 style="margin:.25rem 0;">Wilderness Camping</h3>
+            <p>Sleep riverside under the stars on our multi-day guided expeditions.</p>
+          </div>
+        </article></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Adventures | Devon Hibbert</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+    </div>
+  </footer>
+</body>
+</html>
